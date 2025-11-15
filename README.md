@@ -1,12 +1,10 @@
-Certainly. The single file I provided before contains all of these sections, but here is that same content broken down section by section, with the Markdown for each.
 
-### 1\. Title
+
+
 
 ```markdown
 # BLE CGM-like Attack Lab — Reproducible Traffic Capture
 ```
-
-### 2\. Objective
 
 ```markdown
 ## Objective
@@ -17,10 +15,6 @@ Generate labeled Bluetooth Low Energy (BLE) attack traffic against a CGM-like pe
 ### 3\. Bill of materials (BOM)
 
 ```markdown
----
-
-## Bill of materials (BOM)
-
 **Hardware:**
 * Nordic nRF52840 Dongle (PCA10059) — Wireshark BLE sniffer.
 * MakerDiary nRF52840-MDK USB Dongle — BLE attacker on Ubuntu.
@@ -36,14 +30,10 @@ Generate labeled Bluetooth Low Energy (BLE) attack traffic against a CGM-like pe
 * Perform experiments only on devices you own or are authorized to test.
 ```
 
-### 4\. Repository layout (expected)
+### 4\. Repository layout
 
 ````markdown
----
 
-## Repository layout (expected)
-
-```text
 ble-cgm-ble-attack-lab/
 ├── README.md
 ├── docs/
@@ -83,7 +73,6 @@ ble-cgm-ble-attack-lab/
 ### 6. Target peripheral — GATT profile (CGM-like)
 
 ```markdown
----
 
 ## Target peripheral — GATT profile (CGM-like)
 
@@ -98,14 +87,9 @@ python3 scripts/gatt_dump.py
 # Expect to see the service above and its two characteristics
 ````
 
-````
-
 ### 7. Sniffer node — Windows 11 + Wireshark
 
 ```markdown
----
-
-## Sniffer node — Windows 11 + Wireshark
 
 1.  Install Wireshark ≥ 4.0.
 2.  Install Nordic nRF Sniffer for BLE (extcap + firmware) and flash the nRF52840 Dongle when prompted.
@@ -117,9 +101,6 @@ python3 scripts/gatt_dump.py
 ### 8\. Attacker node — Ubuntu + WHAD
 
 ````markdown
----
-
-## Attacker node — Ubuntu + WHAD
 
 **Installation:**
 ```bash
@@ -141,12 +122,8 @@ export RUN_DURATION_S=900
 
 Ensure your WHAD device interface is `uart0` (the scripts use this logical name). The MakerDiary MDK typically enumerates as `/dev/ttyACM*` and is mapped by WHAD as `uart0` automatically.
 
-````
-
-### 9. Included attack scripts
 
 ```markdown
----
 
 ## Included attack scripts
 
@@ -158,19 +135,16 @@ Ensure your WHAD device interface is `uart0` (the scripts use this logical name)
 * `connect_churn.py`: Rapid connect/disconnect cycles.
 * `subscribe_notify.py`: Subscribes to `f2e1` and logs notifications.
 * `subscribe_and_write.py`: Subscribes to `f2e1` while writing to `f2e2`.
-
+````
 **Example run:**
 ```bash
 export RUN_DURATION_S=900
 python3 scripts/write_flood.py
 ````
 
-````
-
 ### 10. End-to-end experiment procedure
 
 ```markdown
----
 
 ## End-to-end experiment procedure
 
@@ -191,10 +165,7 @@ python3 scripts/write_flood.py
 ### 11\. CSV export for ML (tshark)
 
 ````markdown
----
-
-## CSV export for ML (tshark)
-
+````
 ```bash
 tshark -r capture/2025-11-14_write_flood_run1.pcapng \
   -T fields -E header=y -E separator=, \
@@ -203,15 +174,10 @@ tshark -r capture/2025-11-14_write_flood_run1.pcapng \
   > capture/2025-11-14_write_flood_run1.csv
 ````
 
-````
-
 ### 12. Automation (batch runs)
 
 ```markdown
----
-
-## Automation (batch runs)
-
+````
 ```bash
 export RUN_DURATION_S=900
 
