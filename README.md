@@ -8,9 +8,9 @@ BLE CGM-like Attack Lab — Reproducible Traffic Capture
 
 
 ## Objective
-```markdown
+
 Generate labeled Bluetooth Low Energy (BLE) attack traffic against a CGM-like peripheral, capture packets with a Nordic sniffer + Wireshark, and export PCAP/CSV for downstream ML experiments. The repository includes WHAD-based Python scripts for common attack patterns and a Windows sniffer workflow.
-```
+
 
 ### 3\. Bill of materials (BOM)
 
@@ -69,6 +69,11 @@ ble-cgm-ble-attack-lab/
 
 [STM32 NUCLEO-L476RG + X-NUCLEO-BNRG2A1]      (Target/Peripheral)
 
+
+![Lab overview](docs/img/lab_setup_overview.jpg)
+![Attacker MDK](docs/img/attacker_nrf52840_mdk.jpg)
+![Sniffer Dongle](docs/img/sniffer_nrf52840_dongle.jpg)
+![Target Nucleo + BNRG2A1](docs/img/target_nucleo_l476rg_bnrg2a1.jpg)
 
 ### 6. Target peripheral — GATT profile (CGM-like)
 
