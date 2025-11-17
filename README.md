@@ -198,8 +198,6 @@ done
 
 ### 13. Troubleshooting
 
-## Troubleshooting
-
 * **No frames in Wireshark:** Ensure the Nordic sniffer interface is selected, not a Wi-Fi/Ethernet adapter. Ensure you are "following" the correct device address.
 * **Attacker fails to connect:** Swap the USB cable. Unplug and replug the MDK dongle. Verify WHAD sees `uart0`. Reboot the target peripheral.
 * **Low notification rate:** Ensure CCCD is enabled by the client script (`subscribe_notify.py` handles this). Tune `WRITE_SLEEP_S` variables in scripts.
@@ -215,8 +213,5 @@ Record environment variables, target firmware commit hash, node distances, RF ob
 
 
 ### 15\. License & attribution
-
-
-## License & attribution
 
 This lab guide and scripts are intended for research and education. Use responsibly and within legal/organizational policy boundaries.
