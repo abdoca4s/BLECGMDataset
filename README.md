@@ -73,6 +73,7 @@ Simulation Setup:
 ![Lab overview](docs/img/lab_setup_overview.jpg)
 
 nRF52840-MDK as a BLE Transmitter:
+
 ![Attacker MDK](docs/img/attacker_nrf52840_mdk.jpg)
 
 nRF52840 Sniffer:
