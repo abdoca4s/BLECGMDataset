@@ -80,7 +80,7 @@ nRF52840 Sniffer:
 
 ![Sniffer Dongle](docs/img/sniffer_nrf52840_dongle.jpg)
 
-X-NUCLEO-BNRG2A1 flshed with a sample BLE app as the target:
+X-NUCLEO-BNRG2A1 with a sample BLE application as the target:
 
 ![Target Nucleo + BNRG2A1](docs/img/target_nucleo_l476rg_bnrg2a1.jpg)
 
